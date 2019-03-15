@@ -1,8 +1,17 @@
+// @flow
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+type Props = {  /* ... */ };
+type State = {
+  count: number,
+};
+
+class App extends Component<Props, State> {
+  state = {
+    count: 0,
+  };
   render() {
     return (
       <div className="App">
@@ -17,7 +26,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Learn React, {this.state.count}
           </a>
         </header>
       </div>

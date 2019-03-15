@@ -24,6 +24,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "flow-bin": "^0.95.1",
     "http-proxy-middleware": "^0.19.1"
   },
   "proxy": "http://localhost:3002"
